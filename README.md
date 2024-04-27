@@ -1,2 +1,2 @@
 # JakubPaluszkiewicz.github.io
-About me
+Strona opisująca mnie oraz moje projekty
