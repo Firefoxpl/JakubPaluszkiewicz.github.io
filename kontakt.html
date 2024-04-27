@@ -13,7 +13,7 @@
     <main>
         <section>
             <h2 class="section-title">Skontaktuj się ze mną</h2>
-            <form action="send_email.php" method="post">
+            <form id="contact-form">
                 <div>
                     <label for="name">Imię i nazwisko:</label>
                     <input type="text" id="name" name="name" required>
@@ -30,7 +30,7 @@
                     <label for="message">Wiadomość:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="button">Wyślij</button>
+                <button type="button" id="send-email" class="button">Wyślij</button>
             </form>
             <div class="sms-info">
                 <p>Jeśli preferujesz kontakt telefoniczny, zadzwoń pod numer <strong>739 694 403</strong>. Możesz także wysłać SMS klikając <a href="sms:739694403?body=Twoja%20wiadomo%C5%9B%C4%87%20tutaj">tutaj</a>. Koszt zgodny z taryfą operatora.</p>
@@ -42,5 +42,23 @@
     <footer>
         <p>© 2024 Jakub Paluszkiewicz</p>
     </footer>
+
+    <script>
+        document.getElementById('send-email').addEventListener('click', function() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var message = document.getElementById('message').value;
+            
+            var emailBody = 'Imię i nazwisko: ' + name + '\n';
+            emailBody += 'Adres e-mail: ' + email + '\n';
+            emailBody += 'Nr telefonu: ' + phone + '\n';
+            emailBody += 'Wiadomość: ' + message;
+            
+            var emailLink = 'mailto:paluszkiewicz.jakub@o2.pl?subject=Wiadomość%20z%20formularza%20kontaktowego&body=' + encodeURIComponent(emailBody);
+            
+            window.location.href = emailLink;
+        });
+    </script>
 </body>
 </html>
