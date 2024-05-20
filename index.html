@@ -5,55 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O mnie - Jakub Paluszkiewicz</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <header>
         <h1>O mnie</h1>
     </header>
     <main>
-        <section id="kim-jestem" class="fadeIn">
+        <section id="kim-jestem" data-aos="fade-in">
             <h2>Kim jestem?</h2>
             <p>
                 Mam na imię Jakub i mam 18 lat. Moja pasja do programowania i eksplorowania nowych technologii rozpoczęła się już w szkole podstawowej. Od tamtej pory poświęciłem wiele czasu na zgłębianie tajników informatyki i zdobyłem znaczące doświadczenie w branży IT.
             </p>
+            <img src="images/jakub.jpg" alt="Jakub Paluszkiewicz" class="profile-photo">
             <div class="social-links">
-    <a href="https://github.com/JakubPaluszkiewicz" target="_blank">GitHub</a>
-    <a href="https://www.facebook.com/jakub.paluszkiewicz.58?locale=pl_PL" target="_blank">Facebook</a>
-    <a href="https://replit.com/@paluszkiewiczja" target="_blank">Replit</a>
-    <a href="https://www.linkedin.com/in/jakub-paluszkiewicz-a6a192306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
-</div>
-
+                <a href="https://github.com/JakubPaluszkiewicz" target="_blank">GitHub</a>
+                <a href="https://www.facebook.com/jakub.paluszkiewicz.58?locale=pl_PL" target="_blank">Facebook</a>
+                <a href="https://replit.com/@paluszkiewiczja" target="_blank">Replit</a>
+                <a href="https://www.linkedin.com/in/jakub-paluszkiewicz-a6a192306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+            </div>
         </section>
-        <section id="moje-doswiadczenie" class="slideInLeft">
+        <section id="moje-doswiadczenie" data-aos="slide-left">
             <h2>Moje doświadczenie</h2>
             <p>
-               Jestem programistą z pasją do tworzenia oprogramowania, eksplorowania nowych technologii i rozwijania innowacyjnych rozwiązań. Przez 5 lat działań w branży IT miałem okazję pracować nad różnorodnymi projektami, od małych aplikacji mobilnych po kompleksowe systemy zarządzania. Moje główne obszary ekspertyzy to tworzenie oraz administracja aplikacjami mobilnymi, rozwój aplikacji webowych, analiza danych oraz sztuczna inteligencja.
+                Jestem programistą z pasją do tworzenia oprogramowania, eksplorowania nowych technologii i rozwijania innowacyjnych rozwiązań. Przez 5 lat działań w branży IT miałem okazję pracować nad różnorodnymi projektami, od małych aplikacji mobilnych po kompleksowe systemy zarządzania. Moje główne obszary ekspertyzy to tworzenie oraz administracja aplikacjami mobilnymi, rozwój aplikacji webowych, analiza danych oraz sztuczna inteligencja.
             </p>
         </section>
-        <section id="moja-filozofia" class="zoomIn">
+        <section id="moja-filozofia" data-aos="zoom-in">
             <h2>Moja filozofia</h2>
             <p>
-  W mojej pracy kieruję się zasadą, że najlepsze oprogramowanie powstaje w wyniku współpracy, otwartej komunikacji i ciągłego dążenia do doskonałości. Uwielbiam wyzwania, które stawia przed nami technologia, i zawsze staram się poszerzać swoją wiedzę oraz umiejętności, aby sprostać wymaganiom dzisiejszego dynamicznego świata IT.
+                W mojej pracy kieruję się zasadą, że najlepsze oprogramowanie powstaje w wyniku współpracy, otwartej komunikacji i ciągłego dążenia do doskonałości. Uwielbiam wyzwania, które stawia przed nami technologia, i zawsze staram się poszerzać swoją wiedzę oraz umiejętności, aby sprostać wymaganiom dzisiejszego dynamicznego świata IT.
             </p>
         </section>
-        <section id="projekty" class="fadeIn">
+        <section id="projekty" data-aos="fade-in">
             <h2>Moje projekty</h2>
             <p>
                 Tutaj znajdziesz moje ukończone projekty oraz informacje o moich osiągnięciach.
             </p>
             <a href="projekty.html" class="button">Zobacz moje projekty</a>
         </section>
-        <section id="kontakt" class="fadeIn">
+        <section id="kontakt" data-aos="fade-in">
             <h2>Kontakt</h2>
             <p>
                 Jeśli chcesz dowiedzieć się więcej o mnie lub skontaktować się w sprawie współpracy, zapraszam do kontaktu.
             </p>
             <a href="kontakt.html" class="button">Skontaktuj się ze mną</a>
-            
         </section>
     </main>
     <footer>
         <p>© 2024 Jakub Paluszkiewicz</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
