@@ -4,14 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        form div {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .button {
+            padding: 10px 20px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            align-self: start;
+        }
+        .sms-info {
+            margin-top: 20px;
+        }
+        .return-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header data-aos="fade-down">
         <h1>Kontakt</h1>
     </header>
     <main>
-        <section>
+        <section data-aos="fade-up">
             <h2 class="section-title">Skontaktuj się ze mną</h2>
             <form id="contact-form">
                 <div>
@@ -32,18 +99,21 @@
                 </div>
                 <button type="button" id="send-email" class="button">Wyślij</button>
             </form>
-            <div class="sms-info">
+            <div class="sms-info" data-aos="fade-up">
                 <p>Jeśli preferujesz kontakt telefoniczny, zadzwoń pod numer <strong>739 694 403</strong>. Możesz także wysłać SMS klikając <a href="sms:739694403?body=Twoja%20wiadomo%C5%9B%C4%87%20tutaj">tutaj</a>. Koszt zgodny z taryfą operatora.</p>
             </div>
         </section>
 
-        <p><a href="index.html" class="return-button">Powrót do strony głównej</a></p>
+        <p data-aos="fade-up"><a href="index.html" class="return-button">Powrót do strony głównej</a></p>
     </main>
-    <footer>
+    <footer data-aos="fade-up">
         <p>© 2024 Jakub Paluszkiewicz</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
+        AOS.init();
+
         document.getElementById('send-email').addEventListener('click', function() {
             var name = document.getElementById('name').value;
             var email = document.getElementById('email').value;
