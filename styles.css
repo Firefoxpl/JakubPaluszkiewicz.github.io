@@ -347,3 +347,66 @@ footer {
 footer p {
     margin: 0;
 }
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: url('https://operon.pl/var/operon/storage/images/media/pliki/do_kuriera/operon-programowanie-jezyk-xxi-wieku/212370-1-pol-PL/Operon-Programowanie-jezyk-XXI-wieku.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
