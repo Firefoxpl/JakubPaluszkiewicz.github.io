@@ -4,37 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moje projekty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header data-aos="fade-down">
         <h1>Moje projekty</h1>
     </header>
     <main>
-        <section class="project">
+        <section class="project" data-aos="fade-up" data-aos-delay="100">
             <h2>Aplikacja dla serwisu SoftKomputery</h2>
             <p>Prace wciąż trwają</p>
             <a href="#" class="button">Zobacz więcej</a>
         </section>
 
-        <section class="project">
+        <section class="project" data-aos="fade-up" data-aos-delay="200">
             <h2>Ruletka</h2>
             <p>Ten kod to prosty symulator ruletki w formie aplikacji internetowej. Kiedy strona jest otwarta, tworzy się koło ruletki z różnymi sektorami, każdy sektor ma inną kolorową sekcję oraz tekstową etykietę. Po kliknięciu przycisku "Losuj", koło zaczyna się obracać losowo, a następnie zatrzymuje się na jednym z sektorów. Tekst wyświetlany na górze koła to etykieta sektora, na którym zatrzymało się koło, podając informację o wygranej pozycji.</p>
             <a href="https://jakubpaluszkiewicz.github.io/ruletka/" class="button">Zobacz więcej</a>
         </section>
 
-        <section class="project">
+        <section class="project" data-aos="fade-up" data-aos-delay="300">
             <h2>Projekty poboczne</h2>
             <p>Większość moich prac znajduje się na moim profilu na stronie replit.com.</p>
             <a href="https://replit.com/@paluszkiewiczja" class="button">Zobacz więcej</a>
         </section>
-        
+
         <!-- Dodaj więcej sekcji projektów według potrzeb -->
 
     </main>
-    <p><a href="index.html" class="return-button">Powrót do strony głównej</a></p>
-    <footer>
+    <p data-aos="fade-up" data-aos-delay="400"><a href="index.html" class="return-button">Powrót do strony głównej</a></p>
+    <footer data-aos="fade-up" data-aos-delay="500">
         <p>© 2024 Jakub Paluszkiewicz</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
